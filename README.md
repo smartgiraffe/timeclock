@@ -33,3 +33,15 @@ I have it set up with a few directories.
 ./reports where reports are written
 
 ./config there is a clockins.txt that stores a record of clockins in case the program stops. This file is read every time the program starts so we don't lose anything and a ids.txt that is what associates a user name to an RFID badge. 
+
+
+sample of clockins in /users
+John Smith.csv
+2025-12-12 06:03:51, 2025-12-12 14:53:19
+2025-12-14 03:45:34, 2025-12-14 14:16:29
+2025-12-15 04:46:12, 2025-12-15 07:05:27
+
+sample /config/ids.txt
+{"01fdda17":"John Smith",
+"03b58f58":"Jim Smith"}
+the ID is what is read from the RFID reader 
